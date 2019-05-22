@@ -1,5 +1,5 @@
 import CalciteTheme from 'calcite-react/CalciteThemeProvider/CalciteTheme';
-import { CalciteH1, CalciteH2, CalciteP, CalciteA } from 'calcite-react/Elements';
+import { CalciteP, CalciteA } from 'calcite-react/Elements';
 
 import Provider from './Provider';
 
