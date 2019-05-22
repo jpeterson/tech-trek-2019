@@ -1,0 +1,1145 @@
+import { Appear } from 'mdx-deck';
+import { Image } from 'mdx-deck';
+import { Notes } from 'mdx-deck';
+import { Invert } from 'mdx-deck/layouts';
+import { Split } from 'mdx-deck/layouts';
+
+import Button from 'calcite-react/Button';
+import Alert from 'calcite-react/Alert';
+
+import Person from './components/Person';
+import Twitter from './components/Twitter';
+
+import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
+import { aspect } from '@mdx-deck/themes';
+import theme from './theme';
+
+export const themes = [highlight, theme];
+
+import 'deck.css';
+
+# Esri ❤️ The Modern Web
+
+---
+
+# Hello Tech Trek!
+
+---
+
+# Agenda
+
+- ArcGIS API for JavaScript + Arcade
+
+- Web AppBuilder + Experience Builder
+
+- arcgis-rest-js / esri-loader
+
+---
+
+# But first, I'm Josh.
+
+<ul>
+  <Appear>
+    <li>I live in Denver, Colorado</li>
+    <li>I've been a developer @ Esri PS for ~8 years</li>
+    <li>React is my jam</li>
+    <li>... also, I make jam. [photo]</li>
+  </Appear>
+</ul>
+
+---
+
+<Invert>
+
+# ArcGIS API for JavaScript
+
+</Invert>
+
+---
+
+## Latest and Greatest
+
+- Editor Widget
+- GeoJSON Layer
+- Time support
+
+---
+
+embedded Editor Widget sample
+
+---
+
+### GeoJSON Layer
+
+<iframe
+  style={{ height: '75vh', width: '95vw' }}
+  scrolling="no"
+  title="Query statistics client-side by distance"
+  src="demos/geojson/index.html"
+  frameBorder="no"
+  allowtransparency="true"
+  allowFullScreen={true}
+/>
+
+---
+
+### Time Support (v4.12)
+
+<iframe
+  style={{ height: '75vh', width: '95vw' }}
+  scrolling="no"
+  title="Query statistics client-side by distance"
+  src="demos/time/index.html"
+  frameBorder="no"
+  allowtransparency="true"
+  allowFullScreen={true}
+/>
+
+---
+
+<Image
+  src="./assets/night_king.jpg"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    color: "white",
+    backgroundColor: "black",
+    padding: "4rem"
+  }}>
+
+<div style={{ background: "rgba(0, 0, 0, 0.4", padding: "0 1rem" }}>
+
+Winter is coming (for 3.x)...
+
+<img src="./assets/3_vs_4.png" width="1200px" />
+
+</div>
+
+</Image>
+
+---
+
+# Power to the Browser!
+
+---
+
+## Web Workers & Web Assembly
+
+- Workers offload cpu-intensive work
+- WASM (same projection engine as Pro)
+
+<Notes>
+  https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html
+  https://www.esri.com/arcgis-blog/products/js-api-arcgis/mapping/turbo-charge-your-web-apps-with-client-side-queries
+</Notes>
+
+---
+
+<Invert>
+  <iframe
+    style={{ height: '800px', width: '95vw' }}
+    scrolling="no"
+    title="Query statistics client-side by distance"
+    src={`//codepen.io/jpeterson/embed/yWzvrE/?height="800"&theme-id=dark&default-tab=result`}
+    frameBorder="no"
+    allowtransparency="true"
+    allowFullScreen={true}
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/jpeterson/pen/yWzvrE/">
+      Query statistics client-side by distance
+    </a>{' '}
+    by Josh Peterson (<a href="https://codepen.io/jpeterson">@jpeterson</a>) on{' '}
+    <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</Invert>
+
+---
+
+## WebGL
+
+- More features
+- Faster rendering
+- Advanced graphical effects
+
+---
+
+<Invert>
+  <iframe
+    style={{ height: '800px', width: '95vw' }}
+    scrolling="no"
+    title="Apply effects to features"
+    src={`//codepen.io/jpeterson/embed/GaMyEw/?height="800"&theme-id=dark&default-tab=result`}
+    frameBorder="no"
+    allowtransparency="true"
+    allowFullScreen={true}
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/jpeterson/pen/GaMyEw/">
+      Apply effects to features
+    </a>{' '}
+    by Josh Peterson (<a href="https://codepen.io/jpeterson">@jpeterson</a>) on{' '}
+    <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</Invert>
+
+---
+
+<Invert>
+  <iframe
+    style={{ height: '800px', width: '95vw' }}
+    scrolling="no"
+    title="Tooltip, Filter, and Effect"
+    src={`//codepen.io/jpeterson/embed/oRGyWV/?height="800"&theme-id=dark&default-tab=result`}
+    frameBorder="no"
+    allowtransparency="true"
+    allowFullScreen={true}
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/jpeterson/pen/oRGyWV/">
+      Tooltip, Filter, and Effect
+    </a>{' '}
+    by Josh Peterson (<a href="https://codepen.io/jpeterson">@jpeterson</a>) on{' '}
+    <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</Invert>
+
+---
+
+## Feature Tiling
+
+<img src="https://www.esri.com/arcgis-blog/wp-content/uploads/2017/09/tile-subdivisions.gif" />
+
+---
+
+<Invert>
+  <iframe
+    style={{ height: '800px', width: '95vw' }}
+    scrolling="no"
+    title="Animate color visual variable"
+    src={`//codepen.io/jpeterson/embed/PvJEgM/?height="800"&theme-id=dark&default-tab=result`}
+    frameBorder="no"
+    allowtransparency="true"
+    allowFullScreen={true}
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/jpeterson/pen/PvJEgM/">
+      Animate color visual variable
+    </a>{' '}
+    by Josh Peterson (<a href="https://codepen.io/jpeterson">@jpeterson</a>) on{' '}
+    <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</Invert>
+
+---
+
+# Honorable Mentions
+
+---
+
+## ES6 Promise support
+
+---
+
+## TypeScript
+
+Over **95%** of the JSAPI is now written in TypeScript
+
+---
+
+## A Modern API
+
+> We are continuously modernizing the API to rely less and less on Dojo. The final objective is to ship native ES modules.  
+> – Yann Cabon
+
+---
+
+#### In Progress:
+
+Reduce end-user reliance on Dojo
+
+<Appear>
+
+#### **End goal:**
+
+**Ship native ES Modules**
+
+</Appear>
+
+---
+
+## Framework Support
+
+More on this later...
+
+---
+
+## Responsive web
+
+- Responsive [widget framework](https://developers.arcgis.com/javascript/latest/guide/custom-widget/) (_~~mobile widgets~~_)
+- Responsive [View UI](https://developers.arcgis.com/javascript/latest/guide/view-ui/)
+
+---
+
+# Tips & Tricks from the field
+
+---
+
+### [Detect WebGL Browser Support](https://developers.arcgis.com/javascript/latest/sample-code/scene-webgl-support/index.html)
+
+> _TL;DR: Have a physical GPU_
+
+<Notes>(will be documented in sys req for 4.12)</Notes>
+
+---
+
+# Grok the Docs!
+
+<Appear>
+
+Revamped [tutorials](https://developers.arcgis.com/javascript/latest/guide/create-a-starter-app/) and [Core Concepts](https://developers.arcgis.com/javascript/latest/guide/maps-and-views/)\*
+
+[Clickable](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=webmap-swap) modules & items in sandbox!
+
+_\* Share these with users!_
+
+</Appear>
+
+<Notes>
+  https://www.esri.com/arcgis-blog/products/js-api-arcgis/announcements/a-better-experience-with-the-new-arcgis-api-for-javascript-website/
+</Notes>
+
+---
+
+# JSAPI Starter Pens
+
+https://codepen.io/gavinr/pens/templates
+
+(🙏🏼 Gavin)
+
+---
+
+# Camera Helper
+
+https://arcgis-js-api-camera-helper.gavinr.com
+
+(🙏🏼 Gavin, again)
+
+---
+
+# ArcGIS Online Assistant
+
+https://ago-assistant.esri.com
+
+# 👌🏼
+
+---
+
+# Calcite React\*
+
+https://calcite-react.netlify.com
+
+_\*A bit of a shameless plug..._
+
+---
+
+# Who to keep up with...
+
+---
+
+# Gavin
+
+Esri PS
+
+<Twitter user="gavinrehkemper" />
+
+<!-- [gavinr.com](https://gavinr.com) -->
+
+---
+
+# Jacob
+
+Esri PS
+
+<Twitter user="jwasilgeo" />
+
+<!-- [petrichor.studio](https://petrichor.studio) -->
+
+---
+
+# Rene
+
+Ops Dashboard Team
+
+<Twitter user="odoenet" />
+
+<!-- [odoe.net/blog](https://odoe.net/blog) -->
+
+---
+
+# Yann
+
+JSAPI Team
+
+<Twitter user="yanncabon" />
+
+<!-- [github.com/ycabon](https://github.com/ycabon) -->
+
+---
+
+# Raluca
+
+JSAPI Team
+
+<Twitter user="nicolaraluk" />
+
+<!-- [raluca-nicola.net](https://raluca-nicola.net) -->
+
+---
+
+<Invert>
+
+# Arcade
+
+</Invert>
+
+---
+
+_Todo_
+
+---
+
+<Invert>
+
+# Web AppBuilder
+
+</Invert>
+
+---
+
+## Widgets
+
+Authoring & Customizing
+
+---
+
+Please start here:
+
+[generator-esri-appbuilder-js](https://github.com/Esri/generator-esri-appbuilder-js)
+
+---
+
+## Why?
+
+---
+
+## Developer Experience
+
+- Abstracts Web AppBuilder core
+- Version control-friendly
+- Livereload!
+
+---
+
+## Chock full of best practices
+
+- ES6 + TS
+- CSS Preprocessors
+- i18n
+
+---
+
+## Production ready
+
+`npm run build`
+
+---
+
+<img src="assets/demo-guy.png" style={{ height: '60vh' }} />
+
+<Notes>Demo the generator</Notes>
+
+---
+
+# Best Practices, tips, and tricks
+
+---
+
+_Todo (or cut?)_
+
+---
+
+<Invert>
+
+# Experience Builder\*
+
+\* looking ahead
+
+</Invert>
+
+---
+
+### **Jimu** and **React** and **TypeScript**, oh my!
+
+---
+
+# Jimu
+
+---
+
+# `jimu-core`
+
+> The brains of the operation
+
+> WidgetManager, ConfigManager, LayoutManager, BaseWidget, etc.
+
+---
+
+# `jimu-layouts`
+
+> Contains common implementations for layout widgets
+
+---
+
+# `jimu-ui`
+
+> Experience Builder's component library
+
+> Built on [reactstrap](https://reactstrap.github.io)
+
+---
+
+# `jimu-arcgis`
+
+> Experience Builder, meet the JSAPI
+
+---
+
+## What you can do today
+
+WAB ➡️ ExB: Future proofing your widgets
+
+---
+
+Unfortunately, there's no silver bullet.
+
+But here are some tips
+
+---
+
+# \#1
+
+## Separate your view from your logic
+
+<img
+  src="https://avatars3.githubusercontent.com/u/132384?s=400&v=4"
+  style={{ height: '250px' }}
+/>
+
+<Notes>(who's old and remembers RobotLegs and MVVM?)</Notes>
+
+---
+
+# \#2
+
+## something something
+
+---
+
+# \#3
+
+## Learn TypeScript
+
+- resource
+- resource
+- resource
+
+---
+
+# \#4
+
+## Learn React
+
+- resource
+- resource
+- resource
+
+---
+
+<Invert>
+
+# esri-loader
+
+</Invert>
+
+---
+
+# What is it?
+
+> A tiny library to help load ArcGIS API for JavaScript modules
+
+> **in non-Dojo applications**
+
+---
+
+<img src="https://dynamicmedia.zuza.com/zz/m/original_/9/b/9b6f19b6-008d-4915-8067-e52d6cb40e91/1297551988080_ORIGINAL_Super_Portrait.jpg" />
+
+---
+
+### JSAPI with 3rd party frameworks
+
+1. Map Centric Integration
+
+2. Framework First Integration
+
+---
+
+## Map Centric Integration
+
+```js
+require(['esri/widgets/Zoom/ZoomViewModel'], function(ZoomViewModel) {
+  // hand ZoomViewModel over to your framework of choice
+  makeReactZoomWidget(ZoomViewModel);
+});
+```
+
+Widget `ViewModels` are the key here
+
+---
+
+## Ideal when...
+
+- Only need a single component
+- Comfort zone is Dojo
+- Existing Dojo-based app
+
+---
+
+<Invert>
+  <iframe
+    style={{ height: '800px', width: '95vw' }}
+    scrolling="no"
+    title="Using widgets with React"
+    src={`//codepen.io/jpeterson/embed/QROVzW/?height="800"&theme-id=dark&default-tab=html,result`}
+    frameBorder="no"
+    allowtransparency="true"
+    allowFullScreen={true}
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/jpeterson/pen/QROVzW/">
+      Using widgets with React
+    </a>{' '}
+    by Josh Peterson (<a href="https://codepen.io/jpeterson">@jpeterson</a>) on{' '}
+    <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+
+Map Centric Integration
+
+</Invert>
+
+---
+
+## Framework First Integration
+
+---
+
+## Ideal when...
+
+- Desire a more modern app architecture
+- Comfort zone is React/Angular/Vue/etc.
+- Existing non-Dojo app
+- (bonus) Lazy loading and routing
+
+---
+
+`@arcgis/webpack-plugin`
+
+<Notes>
+  https://github.com/esri/arcgis-webpack-plugin
+  https://github.com/odoe/jsapi-webpack
+  https://www.youtube.com/watch?v=gTFZgLYegDY&feature=youtu.be
+</Notes>
+
+---
+
+_But I don't wanna_ configure Webpack...
+
+---
+
+(detour complete)
+
+---
+
+```js
+import { loadModules } from 'esri-loader';
+
+// first we grab our JSAPI modules
+loadModules(['esri/views/MapView', 'esri/WebMap'])
+  .then(([MapView, WebMap]) => {
+    // then we load a web map from an id
+    const webmap = new WebMap({
+      portalItem: {
+        // autocasts as new PortalItem()
+        id: 'f2e9b762544945f390ca4ac3671cfa72'
+      }
+    });
+
+    // and we show that map in a container w/ id #viewDiv
+    const view = new MapView({
+      map: webmap,
+      container: 'viewDiv'
+    });
+  })
+  .catch(err => {
+    // handle any errors
+    console.error(err);
+  });
+```
+
+`esri-loader`
+
+---
+
+```js
+import { loadModules } from 'esri-loader';
+
+const [WebMap, MapView] = await (loadModules(['esri/WebMap', 'esri/views/MapView']);
+
+const map = new WebMap({
+  portalItem: {
+    // autocasts as new PortalItem()
+    id: 'f2e9b762544945f390ca4ac3671cfa72'
+  }
+});
+
+// and we show that map in a container w/ id #viewDiv
+const view = new MapView({
+  map,
+  container: 'viewDiv'
+});
+```
+
+or using async/await
+
+---
+
+```js
+loadModules(['esri/WebMap', 'esri/views/MapView'], options);
+```
+
+Second argument unlocks options
+
+---
+
+```js
+// Specify a version number
+const options = { version: '3.18' };
+
+// Or a URL
+const options = { url: 'http://server/path/to/esri' };
+```
+
+API Version (latest is default)
+
+---
+
+```js
+// Load CSS from latest version
+const options = { css: true };
+
+// Or a URL
+const options = { css: 'http://server/path/to/esri/css/main.css' };
+```
+
+Load CSS with modules
+
+```js
+import { loadCss } from 'esri-loader';
+
+// by default loadCss() loads styles for the latest 4.x version
+loadCss();
+
+// or for a specific CDN version
+loadCss('3.28');
+
+// or a from specific URL, like a locally hosted version
+loadCss('http://server/path/to/esri/css/main.css');
+```
+
+Or anytime using `loadCss`
+
+---
+
+```js
+// inform esri-loader where in the DOM to place JSAPI CSS
+const options = {
+  css: true,
+  // insert the stylesheet link above the first <style> tag on the page
+  insertCssBefore: 'style'
+};
+```
+
+Overriding styles
+
+---
+
+```js
+// configure Dojo before loading the API
+const options = {
+  // tell Dojo where to load other packages
+  dojoConfig: {
+    async: true,
+    packages: [
+      {
+        location: '/path/to/module',
+        name: 'module'
+      }
+    ]
+  }
+};
+```
+
+`dojoConfig`
+
+---
+
+<Invert>
+
+# @esri/arcgis-rest-js
+
+</Invert>
+
+---
+
+#### `@esri/arcgis-rest-js`
+
+helps you talk to ArcGIS Online and Enterprise.
+
+---
+
+```js
+// construct the url yourself and don't forget to tack on f=json
+var url = 'https://www.arcgis.com/sharing/rest/community/users/joshpeterson';
+
+url += '?f=json';
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == XMLHttpRequest.DONE) {
+    // make sure JSON response doesnt indicate an error
+    if (!xhr.responseText.error) {
+      xhr.responseText;
+    }
+  }
+};
+xhr.open('GET', url, true);
+xhr.send(null);
+```
+
+Vanilla XMLHttpRequest
+
+---
+
+```js
+const url = 'https://www.arcgis.com/sharing/rest/community/users/joshpeterson';
+
+fetch(url, {
+  method: 'POST', // set the request type
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  // concat and encode parameters, append f=json
+  body: encodeURIComponent('f=json')
+})
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } // dig out the json
+  })
+  .then(response => {
+    // trap for errors inside a 200 response
+    if (!response.error) {
+      return response;
+    }
+  });
+```
+
+Vanilla Fetch
+
+---
+
+# This is complex.
+
+- What are all the error codes?
+- How do I handle auth?
+- How are dates supposed to be encoded?
+- How are objects supposed to be passed?
+- How do I manage tokens for federated servers?
+- How do I refresh a token?
+
+---
+
+```js
+import { request } from "@esri/arcgis-rest-request";
+
+const url = "https://www.arcgis.com/sharing/rest/community/users/joshpeterson";
+
+request(url)
+  .then(response)
+  // --> { firstName: "Josh", lastName: "Peterson" ... }
+  .catch((error => {
+    if(err.name === "ArcGISAuthError"){
+      // handle auth error
+    } else {
+      // handle regular error
+    }
+  })
+```
+
+@esri/arcgis-rest-js
+
+---
+
+```js
+import { geocode } from '@esri/arcgis-rest-geocoder';
+
+// assumes you want to use ArcGIS Online
+geocode('LAX').then(response);
+
+// IRequestOptions is still available
+geocode('LAX', {
+  params: {
+    forStorage: true
+  },
+  authentication
+});
+```
+
+Smart defaults
+
+---
+
+# Benefits
+
+- appends f=json (and request headers)
+- encodes query string parameters
+- creates FormData (when required)
+
+---
+
+# (more) Benefits
+
+- clear and informative error handling
+- proper parameter encoding
+- supports authentication
+
+---
+
+# What it is not...
+
+- Mapping library
+- Client-side analysis
+
+---
+
+```js
+import { UserSession } from '@esri/arcgis-rest-auth';
+
+// ArcGIS Online credentials
+const authentication = new UserSession({ username, password });
+
+// ArcGIS Enterprise credentials
+const enterpriseAuth = new UserSession({
+  username,
+  password,
+  portal: `https://gis.city.gov/sharing/rest`
+});
+```
+
+Authentication – get the token
+
+---
+
+```js
+const url = `http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/`;
+
+request(url, { authentication }).then(response => {
+  // the same token will be reused for the second request
+  request(url, { authentication });
+});
+```
+
+Authentication – use the token
+
+---
+
+```js
+// now
+const session = authentication.serialize();
+saveToDatabase(session);
+
+// later
+const session = fetchFromDatabase();
+session.deserialize();
+// --> UserSession instance
+```
+
+Authentication – save the token for later
+
+---
+
+<!-- _(tell them about `fromCredential` and `toCredential`)_ -->
+
+```js
+// Send a UserSession to the JSAPI
+esriId.registerToken(session.toCredential());
+
+// Get a UserSession from the JSAPI
+UserSession.fromCredential(credential);
+```
+
+<div style={{ fontSize: '10rem', lineHeight: '10rem', paddingTop: '2rem' }}>
+  🤾🏼‍♂️
+</div>
+
+---
+
+It's _sort of_ like the [ArcGIS API for Python](https://developers.arcgis.com/python/)...
+
+... but JavaScript.
+
+---
+
+# Goals
+
+- NodeJS and (modern) browsers
+- Modular
+- Framework agnostic
+- Make ArcGIS a bit _friendlier_
+
+---
+
+<Alert yellow> ⚠️ This is not an official product! ⚠️</Alert>
+
+<Appear>
+
+> ... but it is _used in official products_
+
+</Appear>
+
+---
+
+# OSS Bonus Round!
+
+---
+
+## [Koop](http://koopjs.github.io)
+
+<img src="assets/koop.png" />
+
+[Providers](https://koopjs.github.io/docs/available-plugins/providers)
+
+---
+
+## [@esri/hub.js](https://esri.github.io/hub.js/)
+
+```js
+import { fetchInitiative  } from '@esri/hub-initiatives';
+
+// pass in an initiative id
+getInitiative("abc123", requestOptions)
+    .then(
+        response => // get back initiative "model" {item:{...}, data:{...}}
+    );
+```
+
+---
+
+## [@esri/proj-codes](https://github.com/Esri/projection-engine-db-doc)
+
+```js
+const codes = require('@esri/proj-codes');
+
+const crs = codes.lookup(3857);
+
+// crs.wkt => PROJCS["WGS_1984_Web_Mercator_Auxiliary_Sphere",GEOGCS["GCS_WGS_1984"...
+```
+
+---
+
+## [@esri/arcgis-html-sanitizer](https://github.com/Esri/arcgis-html-sanitizer)
+
+```js
+// Sanitize a string
+const sanitizedHtml = sanitizer.sanitize(
+  '<img src="https://example.com/fake-image.jpg" onerror="alert(1);" />'
+);
+// sanitizedHtml => <img src="https://example.com/fake-image.jpg" />
+
+// Check if a string contains invalid HTML
+const validation = sanitizer.validate(
+  '<img src="https://example.com/fake-image.jpg" onerror="alert(1);" />'
+);
+// validation => {
+//  isValid: false
+//  sanitized: '<img src="https://example.com/fake-image.jpg" />'
+// }
+```
+
+[ArcGIS supported HTML](https://doc.arcgis.com/en/arcgis-online/reference/supported-html.htm)
+
+---
+
+## [Terraformer](http://terraformer.io/)
+
+```js
+// parse ArcGIS JSON, convert it to a Terraformer.Primitive
+var primitive = Terraformer.ArcGIS.parse({
+  x: '-122.6764',
+  y: '45.5165',
+  spatialReference: {
+    wkid: 4326
+  }
+});
+
+// take a Terraformer.Primitive or GeoJSON and convert it to ArcGIS JSON
+var point = Terraformer.ArcGIS.convert({
+  type: 'Point',
+  coordinates: [45.5165, -122.6764]
+});
+```
+
+---
+
+# Open Specs
+
+---
+
+## [i3s-spec](https://github.com/Esri/i3s-spec/blob/master/format/Indexed%203d%20Scene%20Layer%20Format%20Specification.md)
+
+<img src="assets/i3s-spec.png" />
+
+---
+
+## [cim-spec](https://github.com/Esri/cim-spec)
+
+<img src="assets/cim.png" />
+
+---
+
+## [Lerc & lerc-js](https://github.com/Esri/lerc)
+
+```js
+Lerc.decode(xhrResponse, {
+  pixelType: 'U8', // leave pixelType out in favor of F32 for lerc1
+  inputOffset: 10 // start from the 10th byte
+});
+```
+
+---
+
+# Thanks for having me!
+
+<Twitter user="jm_peterson" />
