@@ -14,7 +14,7 @@ const Provider = ({ children }) => {
     <CalciteThemeProvider>
       <TopNav>
         <TopNavBrand href="#" src="/static/assets/esri-logo-black.svg" />
-        <TopNavTitle href="#">Esri ❤️ The Modern Web</TopNavTitle>
+        <TopNavTitle href="#">JavaScript @ Esri</TopNavTitle>
         <TopNavList>
           <TopNavLink href="#" active={isActive([0, 40])}>
             JSAPI + Arcade
