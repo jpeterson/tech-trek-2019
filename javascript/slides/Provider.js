@@ -13,7 +13,7 @@ const Provider = ({ children }) => {
   return (
     <CalciteThemeProvider>
       <TopNav>
-        <TopNavBrand href="#" src="assets/esri-logo-black.svg" />
+        <TopNavBrand href="#" src="/static/assets/esri-logo-black.svg" />
         <TopNavTitle href="#">Esri ❤️ The Modern Web</TopNavTitle>
         <TopNavList>
           <TopNavLink href="#" active={isActive([0, 40])}>
@@ -33,8 +33,12 @@ const Provider = ({ children }) => {
 };
 
 const isActive = range => {
-  return true;
-
+  if (typeof window === 'undefined') {
+    return false;
+  } else {
+    const page = Number(window.location.pathname.substring(1));
+    return page >= range[0] && page <= range[1];
+  }
 }
 
 export default Provider;

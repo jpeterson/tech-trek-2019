@@ -13,7 +13,7 @@ const Twitter = ({ user }) => {
           alignItems: 'center'
         }}
       >
-        <img style={{ height: '1.5em' }} src="assets/twitter.svg" />
+        <img style={{ height: '1.5em' }} src="/static/assets/twitter.svg" />
         {user}
       </CalciteA>
     </div>
