@@ -11,7 +11,7 @@
     "prettier": "^1.17.1"
   },
   "scripts": {
-    "start": "mdx-deck deck.mdx",
+    "start": "mdx-deck -p 8081 deck.mdx",
     "build": "mdx-deck build deck.mdx && npm run copy",
     "copy": "npm run copy:static && npm run copy:public",
     "copy:static": "cp -R static/ dist/static/",

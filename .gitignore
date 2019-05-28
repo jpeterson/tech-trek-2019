@@ -10,4 +10,3 @@ dist/
 
 # misc
 .DS_Store
-/lambda_env

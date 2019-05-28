@@ -33,9 +33,27 @@ thank you for having me
 
 ---
 
+# Who's here?
+
+---
+
+# How do we feel about JavaScript?
+
+---
+
+# What are we using it for?
+
+---
+
+# Less talk
+
+# More workshop
+
+---
+
 # Agenda
 
-- ArcGIS API for JavaScript + Arcade
+- ArcGIS API for JavaScript
 
 - Web AppBuilder + Experience Builder
 
@@ -127,6 +145,10 @@ thank you for having me
 
 ---
 
+<img src="/static/assets/feels_like.png" style={{ height: '75vh' }} />
+
+---
+
 # ~8 years @ Esri
 
 > 5 in DC, 3 in Colorado
@@ -205,6 +227,43 @@ thank you for having me
 ---
 
 <Image
+  src="/static/assets/ijc.png"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    marginTop: '63px'
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>
+    International Joint Commission
+  </h2>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  <a href="https://ijc.org" target="_blank">
+    ijc.org
+  </a>
+</div>
+
+</Image>
+
+---
+
+<Image
   src="/static/assets/sdg.png"
   style={{
     display: "flex",
@@ -271,7 +330,7 @@ thank you for having me
 ---
 
 <Image
-  src="/static/assets/ijc.png"
+  src="/static/assets/psdw.png"
   style={{
     display: "flex",
     flexDirection: "column",
@@ -283,7 +342,7 @@ thank you for having me
 
 <div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
   <h2 style={{ color: 'white', margin: '1rem' }}>
-    International Joint Commission
+    Esri PS internal Developer Workshop
   </h2>
 </div>
 
@@ -298,9 +357,7 @@ thank you for having me
     lineHeight: '1rem'
   }}
 >
-  <a href="https://ijc.org" target="_blank">
-    ijc.org
-  </a>
+  Esri
 </div>
 
 </Image>
@@ -319,15 +376,11 @@ I support `async` 😄
 
 ---
 
-<Invert>
-
 # ArcGIS API for JavaScript
-
-</Invert>
 
 ---
 
-## Latest and Greatest
+## JSAPI Latest and Greatest
 
 - Editor Widget
 - GeoJSON Layer
@@ -335,7 +388,24 @@ I support `async` 😄
 
 ---
 
-embedded Editor Widget sample
+<Invert>
+  <iframe
+    style={{ height: '800px', width: '95vw' }}
+    scrolling="no"
+    title="Editor widget with configurations"
+    src={`//codepen.io/jpeterson/embed/oRPNPo/?height="800"&theme-id=dark&default-tab=result`}
+    frameBorder="no"
+    allowtransparency="true"
+    allowFullScreen={true}
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/jpeterson/pen/oRPNPo/">
+      Editor widget with configurations
+    </a>{' '}
+    by Josh Peterson (<a href="https://codepen.io/jpeterson">@jpeterson</a>) on{' '}
+    <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</Invert>
 
 ---
 
@@ -607,14 +677,6 @@ https://ago-assistant.esri.com
 
 ---
 
-# Calcite React\*
-
-https://calcite-react.netlify.com
-
-_\*A bit of a shameless plug..._
-
----
-
 # Who to keep up with...
 
 ---
@@ -669,23 +731,7 @@ JSAPI Team
 
 ---
 
-<Invert>
-
-# Arcade
-
-</Invert>
-
----
-
-_Todo_
-
----
-
-<Invert>
-
 # Web AppBuilder
-
-</Invert>
 
 ---
 
@@ -733,13 +779,9 @@ Please start here:
 
 ---
 
-<Invert>
-
 # Experience Builder\*
 
 \* looking ahead
-
-</Invert>
 
 ---
 
@@ -806,35 +848,26 @@ But here are some tips
 
 # \#2
 
-## something something
+## Learn and use TypeScript
+
+- [typescriptlang.org/docs/handbook/react-&-webpack.html](https://www.typescriptlang.org/docs/handbook/react-&-webpack.html)
+- [basarat.gitbooks.io/typescript/content](https://basarat.gitbooks.io/typescript/content/)
+- [github.com/TypeStrong/learn-typescript](https://github.com/TypeStrong/learn-typescript)
+- [Official "What's New" Wiki Page](https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript)
 
 ---
 
 # \#3
 
-## Learn TypeScript
+## Learn and use React
 
-- resource
-- resource
-- resource
-
----
-
-# \#4
-
-## Learn React
-
-- resource
-- resource
-- resource
+- [reactjs.org](https://reactjs.org)
+- [facebook.github.io/create-react-app](https://facebook.github.io/create-react-app)
+- [wesbos.com/courses](https://wesbos.com/courses)
 
 ---
-
-<Invert>
 
 # esri-loader
-
-</Invert>
 
 ---
 
@@ -929,6 +962,8 @@ Map Centric Integration
 _But I don't wanna_ configure Webpack...
 
 ---
+
+# `esri-loader`
 
 (detour complete)
 
@@ -1067,11 +1102,15 @@ const options = {
 
 ---
 
-<Invert>
+Last point on working with frameworks...
+
+---
+
+<img src="/static/assets/frameworks.png" />
+
+---
 
 # @esri/arcgis-rest-js
-
-</Invert>
 
 ---
 
@@ -1294,6 +1333,14 @@ It's _sort of_ like the [ArcGIS API for Python](https://developers.arcgis.com/py
 ---
 
 # OSS Bonus Round!
+
+---
+
+# Calcite React\*
+
+https://calcite-react.netlify.com
+
+_\*A bit of a shameless plug..._
 
 ---
 
