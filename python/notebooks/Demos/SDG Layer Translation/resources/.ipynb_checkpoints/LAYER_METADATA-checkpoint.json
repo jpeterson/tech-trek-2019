@@ -1,0 +1,37 @@
+{
+    "en": {
+        "TITLE": "School Locations",
+        "DESCRIPTION": "Locations of schools in the D.C. Area",
+        "SNIPPET": "Here is a much longer description of this layer. It can include <b>html</b> tags.",
+        "TAGS": ["tagNubmerOne_en", "tagNubmerTwo_en"],
+        "THUMBNAIL": "linkToThumbNail_en.png"
+    },
+    "fr": {
+        "TITLE": "School Locations",
+        "DESCRIPTION": "Locations of schools in the D.C. Area",
+        "SNIPPET": "Here is a much longer description of this layer. It can include <b>html</b> tags.",
+        "TAGS": ["tagNubmerOne_fr", "tagNubmerTwo_fr"],
+        "THUMBNAIL": "linkToThumbNail_fr.png"
+    },
+    "es": {
+        "TITLE": "School Locations",
+        "DESCRIPTION": "Locations of schools in the D.C. Area",
+        "SNIPPET": "Here is a much longer description of this layer. It can include <b>html</b> tags.",
+        "TAGS": ["tagNubmerOne_es", "tagNubmerTwo_es"],
+        "THUMBNAIL": "linkToThumbNail_es.png"
+    },
+    "it": {
+        "TITLE": "School Locations",
+        "DESCRIPTION": "Locations of schools in the D.C. Area",
+        "SNIPPET": "Here is a much longer description of this layer. It can include <b>html</b> tags.",
+        "TAGS": ["tagNubmerOne_it", "tagNubmerTwo_it"],
+        "THUMBNAIL": "linkToThumbNail_it.png"
+    },
+    "pr": {
+        "TITLE": "School Locations",
+        "DESCRIPTION": "Locations of schools in the D.C. Area",
+        "SNIPPET": "Here is a much longer description of this layer. It can include <b>html</b> tags.",
+        "TAGS": ["tagNubmerOne_pr", "tagNubmerTwo_pr"],
+        "THUMBNAIL": "linkToThumbNail_pr.png"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tech-trek-2019-python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "calcite-react": "^0.35.0"
+  },
+  "devDependencies": {
+    "mdx-deck": "^2.3.2",
+    "prettier": "^1.17.1"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx && npm run copy",
+    "copy": "npm run copy:static && npm run copy:public",
+    "copy:static": "cp -R static/ dist/static/",
+    "copy:public": "cp -R public/ dist/",
+    "help": "mdx-deck"
+  },
+  "author": "Josh Peterson <jpeterson@esri.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,72 @@
+{
+  "en": {
+    "REF_AREA": "Reference Area",
+    "OBS_VALUE": "Observed Value",
+    "INDICATOR": "Indicator",
+    "FREQ": "Frequency",
+    "SEX": "Sex",
+    "AGE": "Age",
+    "TIME_PERIOD": "Time Period",
+    "UNIT": "Unit",
+    "LOCATION": "Location",
+    "SOURCE_NAME": "Source Name"
+  },
+  "fr": {
+    "series_description": "Description de la série",
+    "series_code": "Code de série",
+    "series_release": "Sortie de la série",
+    "geoAreaCode": "Code de zone géographique",
+    "geoAreaName": "Nom de la zone géographique",
+    "REF_AREA": "Zone de référence",
+    "OBS_VALUE": "Valeur observée",
+    "INDICATOR": "Indicateur",
+    "FREQ": "Fréquence",
+    "Sex": "Sexe",
+    "Age": "Âge",
+    "TIME_PERIOD": "Time Period",
+    "Units": "Unit",
+    "LOCATION": "Lieu",
+    "SOURCE_NAME": "Nom de la source"
+  },
+  "es": {
+    "series_description": "Serie Descripción",
+    "series_code": "Codigo de serie",
+    "series_release": "Lanzamiento de la serie",
+    "geoAreaCode": "Código de área geográfica",
+    "geoAreaName": "Nombre del area geografica",
+    "REF_AREA": "Area de referencia",
+    "OBS_VALUE": "Valor observado",
+    "INDICATOR": "Indicador",
+    "FREQ": "Frecuencia",
+    "Sex": "Sexo",
+    "Age": "Edad",
+    "TIME_PERIOD": "Periodo de tiempo",
+    "Units": "Unidad",
+    "LOCATION": "Ubicacion",
+    "SOURCE_NAME": "Nombre de la fuente"
+  },
+  "it": {
+    "REF_AREA": "Area di riferimento",
+    "OBS_VALUE": "Valore osservato",
+    "INDICATOR": "Indicatore",
+    "FREQ": "Frequenza",
+    "SEX": "Sesso",
+    "AGE": "Età",
+    "TIME_PERIOD": "Periodo",
+    "UNIT": "Unità",
+    "LOCATION": "Posizione",
+    "SOURCE_NAME": "Nome sorgente"
+  },
+  "pr": {
+    "REF_AREA": "Área de referência",
+    "OBS_VALUE": "Valor observado",
+    "INDICATOR": "Indicador",
+    "FREQ": "Frequência",
+    "SEX": "Sexo",
+    "AGE": "Idade",
+    "TIME_PERIOD": "Período",
+    "UNIT": "Unidade",
+    "LOCATION": "Localização",
+    "SOURCE_NAME": "Nome da fonte"
+  }
+}

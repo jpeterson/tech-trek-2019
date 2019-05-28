@@ -1,0 +1,943 @@
+import { Appear } from 'mdx-deck';
+import { Image } from 'mdx-deck';
+import { Notes } from 'mdx-deck';
+import { Split } from 'mdx-deck/layouts';
+
+import Button from 'calcite-react/Button';
+import Alert from 'calcite-react/Alert';
+
+import Twitter from './components/Twitter';
+
+import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
+import { aspect } from '@mdx-deck/themes';
+import theme from './theme';
+
+export const themes = [highlight, theme];
+
+import 'deck.css';
+
+# Python @ Esri
+
+> _2019 Tech Trek Edition_
+
+---
+
+# [tech-trek-py.netlify.com](https://tech-trek-py.netlify.com/)
+
+---
+
+# Hello Tech Trek!
+
+thank you for having me
+
+---
+
+# Agenda
+
+- Administering your GIS
+
+- Analysis Tasks
+
+- Advanced Workflows
+
+---
+
+# But first, 👋🏼 I'm Josh.
+
+---
+
+<Image
+  src="/static/assets/chataqua.jpg"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white"
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>
+    I live in Lafayette, Colorado
+  </h2>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  Chataqua Park
+</div>
+
+</Image>
+
+---
+
+<Split>
+
+![Kai](/static/assets/kai.jpg)
+
+![Galen](/static/assets/galen.jpg)
+
+</Split>
+
+---
+
+<img src="/static/assets/esri_teams.png" style={{ height: '75vh' }} />
+
+<div style={{ color: 'red' }}>Internal only, please.</div>
+
+---
+
+## Where are the developers?
+
+<Appear>
+
+- Software & Solutions
+
+* Business Development
+
+- Professional Services
+
+* Support
+
+</Appear>
+
+---
+
+<img src="/static/assets/ps_locations.jpg" style={{ height: '75vh' }} />
+
+<div>~715 in total</div>
+
+---
+
+<img src="/static/assets/ps_staff.png" style={{ height: '75vh' }} />
+
+---
+
+<img src="/static/assets/ps_dev_types.png" style={{ height: '75vh' }} />
+
+---
+
+# ~8 years @ Esri
+
+> 5 in DC, 3 in Colorado
+
+---
+
+# I mostly build apps.
+
+---
+
+<Image
+  src="/static/assets/irwin.png"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    marginTop: '63px'
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>IRWIN</h2>
+  <div>Integrated Reporting of Wildland Fire Information</div>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  U.S. Dept of Interior
+</div>
+
+</Image>
+
+---
+
+<Image
+  src="/static/assets/metlife.png"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    marginTop: '63px'
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>MAPS & Plat Builder</h2>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  MetLife Agricultural Finance
+</div>
+
+</Image>
+
+---
+
+<Image
+  src="/static/assets/ijc.png"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    marginTop: '63px'
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>
+    International Joint Commission
+  </h2>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  <a href="https://ijc.org" target="_blank">
+    ijc.org
+  </a>
+</div>
+
+</Image>
+
+---
+
+<Image
+  src="/static/assets/sdg.png"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    marginTop: '63px'
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>SDG Country Profiles</h2>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  United Nations Statistics Division
+</div>
+
+</Image>
+
+---
+
+<Image
+  src="/static/assets/a4iot.png"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    marginTop: '63px'
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>ArcGIS Analytics for IoT</h2>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  Esri
+</div>
+
+</Image>
+
+---
+
+<Image
+  src="/static/assets/psdw.png"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    marginTop: '63px'
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>
+    Esri PS internal Developer Workshop
+  </h2>
+</div>
+
+<div
+  style={{
+    position: 'absolute',
+    bottom: '30px',
+    right: '30px',
+    background: 'rgba(0, 0, 0, 0.6',
+    padding: '1rem',
+    fontSize: '1rem',
+    lineHeight: '1rem'
+  }}
+>
+  Esri
+</div>
+
+</Image>
+
+---
+
+I'm only one developer...
+
+... but I know a lot of others.
+
+---
+
+I support `async` 😄
+
+## [esriurl.com/techtrek](http://esriurl.com/techtrek)
+
+---
+
+# Administering your GIS
+
+---
+
+# The Basics
+
+A quick overview
+
+---
+
+## Authentication
+
+---
+
+ArcGIS authentication is **a deep topic**.
+
+<div style={{ textAlign: 'left', fontSize: '2rem', lineHeight: '5.5rem', columns: 2 }}>
+
+<Appear>
+<div style={{ color: 'black' }}>Anonymous users</div>
+
+<div style={{ color: 'black' }}>Built-in users</div>
+
+<div style={{ color: 'black' }}>Enterprise identity store</div>
+
+<div style={{ color: 'black' }}>Web-tier authentication with LDAP</div>
+
+<div style={{ color: 'black' }}>Web-tier authentication secured with PKI</div>
+
+<div style={{ color: 'black' }}>Web-tier authentication secured with IWA</div>
+
+<div style={{ color: 'black' }}>
+  Portal-tier authentication with Active Directory
+</div>
+
+<div style={{ color: 'black' }}>Portal-tier authentication with LDAP</div>
+
+<div style={{ color: 'black' }}>User authentication with OAuth 2.0</div>
+
+<div style={{ color: 'black' }}>Connecting through ArcGIS Pro</div>
+
+</Appear>
+
+</div>
+
+---
+
+```py
+from arcgis.gis import GIS
+
+# connect anonymously
+gis = GIS()
+```
+
+# 👻
+
+---
+
+```py
+from arcgis.gis import GIS
+
+# username and password
+gis = GIS(
+  username='joshpeterson',
+  password='🙊'
+)
+```
+
+As a built-in user
+
+<Notes>
+  https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/
+</Notes>
+
+---
+
+```py
+from arcgis.gis import GIS
+
+# Use active Portal in ArcGIS Pro
+gis = GIS('pro')
+```
+
+Using Pro
+
+---
+
+```py
+from arcgis.gis import GIS
+
+# save a profile ⭐
+gis = GIS(
+  username='joshpeterson',
+  password='🙊',
+  profile='tech_trek_profile'
+)
+```
+
+Store your credentials!
+
+(uses [`keyring`](https://pypi.org/project/keyring/))
+
+---
+
+```py
+from arcgis.gis import GIS
+
+# use a profile ⭐
+gis = GIS(profile='tech_trek_profile')
+```
+
+Use those credentials!
+
+---
+
+```py
+from arcgis.gis import GIS
+
+# using ArcGIS Enterprise
+GIS(url='https://esri.northeurope.cloudapp.azure.com/portal')
+```
+
+ArcGIS Enterprise
+
+---
+
+## `GIS` helpers
+
+```py
+# no need for this
+from arcgis import UserManager
+
+# just do this
+gis.users
+```
+
+---
+
+```py
+# users
+gis.users.get('rene')
+
+# current user
+gis.users.me
+```
+
+`users`
+
+---
+
+```py
+# search for groups
+gis.groups.search('Denver')
+
+# find all of rene's groups
+gis.groups.search(gis.users.get('rene').username)
+```
+
+`groups`
+
+---
+
+```py
+# find all content
+gis.content.search(query='*')
+
+# is this service name taken?
+gis.content.is_service_name_available(
+  service_name='lakes',
+  service_type='featureService'
+)
+```
+
+`content`
+
+---
+
+```py
+# list servers behind your Portal
+gis.admin.servers.list()
+
+# list available credits
+gis.admin.credits.credits
+```
+
+`gis.admin`
+
+---
+
+## User Management
+
+---
+
+## 🚨 New 🚨
+
+## User Types
+
+# 👩🏽‍💼 🧜🏼‍♂️ 👨🏽‍⚕️ 🧟‍♂️ 👩🏻‍🎤 👩🏿‍🚀
+
+---
+
+## User Types
+
+- Introduced in latest releases
+- Level 1 and 2 = Viewer and Creator\*
+- More flexibility
+- Python API supports both!
+
+[Explainer](https://www.esri.com/en-us/arcgis/products/arcgis-online/pricing/arcgis-online-subscriptions) / [Pricing](https://www.esri.com/en-us/arcgis/products/arcgis-online/pricing)
+
+---
+
+```py
+# get users by user type
+gis.users.counts(type='user_type')
+
+```
+
+Get count of users by type
+
+---
+
+```py
+# get a pandas dataframe
+gis.users.counts(type='user_type')
+
+# get a List
+gis.users.counts(
+  type='user_type',
+  as_df=False
+)
+
+# using pandas dataframe
+df = gis.users.counts(type='user_type')
+df['count'].sum()
+```
+
+Get total user count
+
+---
+
+```py
+gis.users.create(
+    username='obi_wan_esri',
+    password='Us3Th3F0rc3',
+    firstname='Ben',
+    lastname='Kenobi',
+    email='bkenobi@esri.com',
+    role='iAAAAAAAAAAAAAAA',
+    user_type='viewerUT'
+)
+```
+
+Create a user [🔗](https://developers.arcgis.com/rest/enterprise-administration/portal/create-user.htm#GUID-FAEC4318-1060-4231-9F2F-9C04596B1847)
+
+---
+
+```py
+user.update(
+  first_name='Obi Wan',
+  thumbnail='./data/obi_wan.png'
+)
+```
+
+Update a user
+
+---
+
+```py
+# data file
+file = './data/crimes_shp.zip'
+
+# dataset item properties
+item_properties = {
+    'title' : 'Crimes',
+    'type' : 'Shapefile',
+    'tags' : ['Crimes']
+}
+
+# publish dataset
+shp_item = gis.content.add(
+  data=file,
+  item_properties=item_properties,
+  owner=user
+)
+
+# publish service from dataset item
+layer_item = shp_item.publish()
+```
+
+Publish content for a user
+
+---
+
+```py
+# search for a user
+users = gis.users.search('ben')
+
+# or get a user
+user = gis.users.get('obi_wan_esri')
+
+# list the user's content
+items = users[0].items()
+```
+
+List a user's content
+
+---
+
+```py
+# allocate credits
+gis.admin.credits.allocate(
+  username=gis.users.me.username,
+  credits=1000
+)
+
+# deallocate credits
+gis.admin.credits.deallocate(
+  username=gis.users.me.username,
+  credits=999
+)
+```
+
+Work with credits  
+(admins only)
+
+---
+
+```py
+# delete a user
+user.delete()
+```
+
+Delete a user 😱
+
+---
+
+<Image
+  src="/static/assets/clones.jpg"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white"
+  }}>
+
+<div style={{ background: 'rgba(0, 0, 0, 0.6', padding: '0 4rem' }}>
+  <h2 style={{ color: 'white', margin: '1rem' }}>Cloning Items</h2>
+</div>
+
+</Image>
+
+---
+
+# `clone_items`
+
+Copy **Hosted Feature Layers** and **Items** from one GIS to another
+
+---
+
+```py
+# connect to "source" GIS
+gis_source = GIS(
+  profile='joshdbs',
+  set_active=False
+)
+
+# connect to "destination" GIS
+gis = GIS(profile='portal')
+
+# get items to clone
+items_to_clone = gis_source.content.search(
+  query='owner: "joshdbs"',
+  item_type='Web Map'
+)
+
+# clone items
+gis.content.clone_items(items=items_to_clone)
+```
+
+`clone_items`
+
+---
+
+```py
+# clone schema
+gis.content.clone_items(
+  items=items_to_clone,
+  copy_data=False
+)
+```
+
+🔥 Hot tip: `copy_data`
+
+---
+
+# Enterprise Webhooks
+
+---
+
+# 🤖 Curator Bot
+
+---
+
+Honorable Mention:
+
+https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.gis.admin.html#webhookmanager
+
+---
+
+# Analysis
+
+---
+
+# 🐼
+
+## pandas
+
+---
+
+![pandas cheat sheet](/static/assets/pandas_cheat_sheet.png)
+
+[Pandas Cheat Sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
+
+---
+
+# Spatially Enabled DataFrame
+
+---
+
+## Get Data into the SeDF
+
+---
+
+```py
+# get an item and its first layer
+item = GIS().content.get("85d0ca4ea1ca4b9abf0c51b9bd34de2e")
+flayer = item.layers[0]
+
+# query the layer
+fs = flayer.query(where="ST = 'CO'")
+
+# access the SeDF on the resulting featureset
+fs.df
+```
+
+SeDF is built-in to `FeatureSet`
+
+---
+
+```py
+
+# explicitly create a SeDF without querying
+pd.DataFrame.spatial.from_layer(flayer)
+```
+
+SeDF from a layer
+
+---
+
+```py
+# interrogate the SeDF itself
+q = sdf.AGE_45_54 < 1500
+
+# get the data
+sdf[q].head()
+```
+
+Query the SeDF
+
+---
+
+## Creating a SeDF locally
+
+---
+
+If `arcpy` is available, support for:
+
+- feature classes
+- shapefiles
+- ArcGIS Server Web Services
+- ArcGIS Online Hosted Feature Layers
+- OGC Services
+
+---
+
+```py
+sdf
+ .spatial
+ .from_featureclass(location=r'c:\temp\scratch.gdb\mycities')
+```
+
+Using `arcpy` to understand a FGDB
+
+---
+
+```py
+pd.DataFrame
+  .spatial
+  .from_featureclass('./data/cities.shp')
+```
+
+If no `arcpy`, just shapefiles.
+
+---
+
+## Get stuff out of the SeDF
+
+---
+
+Supported output formats:
+
+- Feature Layer
+- Feature Collection
+- Feature Set
+- Feature Class
+- GeoJSON
+- Pickle (pandas format)
+
+---
+
+```py
+sdf
+ .spatial
+ .to_featureclass(location=r'c:\temp\scratch.gdb\mycities')
+```
+
+To a feature class
+
+---
+
+```py
+columns = ['NAME', 'ST', 'CAPITAL', 'STFIPS', 'POP2000', 'POP2007', 'SHAPE']
+sdf[columns].head()
+             .spatial
+             .to_featureclass(location=r'c:/temp/sdf_head_output.shp')
+```
+
+To a shapefile (with a subset of fields)
+
+---
+
+# Advanced Workflows
+
+---
+
+## A few real-world examples from Esri PS.
+
+_How do you use Python?_
+
+---
+
+## Translating UN SDG Feature Layers
+
+\- Adam Pfister
+
+---
+
+## AIS / SPIRE
+
+\- Jeremy Mirmelstein
+
+---
+
+## IRWIN "Conveyor"
+
+\- Loren Cress & Josh
+
+---
+
+## Publicizing Crime Data
+
+\- Brooke Reams
+
+---
+
+Remember:
+
+## [esriurl.com/techtrek](http://esriurl.com/techtrek)
+
+---
+
+# Thanks for having me!
+
+<Twitter user="jm_peterson" />
+
+> [tech-trek-py.netlify.com](https://tech-trek-py.netlify.com/)

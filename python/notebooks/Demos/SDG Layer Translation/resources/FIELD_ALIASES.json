@@ -1,0 +1,14 @@
+{
+    "en": {
+        "NAME": "Name",
+        "LOCATION": "Location"        
+    },
+    "fr": {
+        "NAME": "Nom",
+        "LOCATION": "Emplacement"       
+    },
+    "es": {
+        "NAME": "Nombre",
+        "LOCATION": "Ubicación"
+    }
+}
