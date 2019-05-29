@@ -1,21 +1,22 @@
-import { Appear } from 'mdx-deck';
-import { Image } from 'mdx-deck';
-import { Notes } from 'mdx-deck';
-import { Invert } from 'mdx-deck/layouts';
+import { Appear, Image, Notes, Head } from 'mdx-deck';
 import { Split } from 'mdx-deck/layouts';
+import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
 
 import Button from 'calcite-react/Button';
 import Alert from 'calcite-react/Alert';
 
 import Twitter from './components/Twitter';
 
-import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
-import { aspect } from '@mdx-deck/themes';
 import theme from './theme';
+
+import 'deck.css';
 
 export const themes = [highlight, theme];
 
-import 'deck.css';
+<Head>
+  <title>JS @ Esri</title>
+  <link rel="shortcut icon" href="/static/favicon.png" />
+</Head>
 
 # JavaScript @ Esri
 
@@ -57,7 +58,7 @@ thank you for having me
 
 - Web AppBuilder + Experience Builder
 
-- arcgis-rest-js / esri-loader
+- Esri Open Source
 
 ---
 
@@ -864,6 +865,10 @@ But here are some tips
 - [reactjs.org](https://reactjs.org)
 - [facebook.github.io/create-react-app](https://facebook.github.io/create-react-app)
 - [wesbos.com/courses](https://wesbos.com/courses)
+
+---
+
+# Esri Open Source
 
 ---
 

@@ -1,20 +1,19 @@
-import { Appear } from 'mdx-deck';
-import { Image } from 'mdx-deck';
-import { Notes } from 'mdx-deck';
+import { Appear, Image, Notes, Head } from 'mdx-deck';
 import { Split } from 'mdx-deck/layouts';
-
-import Button from 'calcite-react/Button';
-import Alert from 'calcite-react/Alert';
 
 import Twitter from './components/Twitter';
 
 import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
-import { aspect } from '@mdx-deck/themes';
 import theme from './theme';
+
+import 'deck.css';
 
 export const themes = [highlight, theme];
 
-import 'deck.css';
+<Head>
+  <title>Python @ Esri</title>
+  <link rel="shortcut icon" href="/static/favicon.png" />
+</Head>
 
 # Python @ Esri
 

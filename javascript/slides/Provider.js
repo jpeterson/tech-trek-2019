@@ -13,17 +13,18 @@ const Provider = ({ children }) => {
   return (
     <CalciteThemeProvider>
       <TopNav>
-        <TopNavBrand href="#" src="/static/assets/esri-logo-black.svg" />
-        <TopNavTitle href="#">JavaScript @ Esri</TopNavTitle>
+        <TopNavBrand href={getLink(0)} src="/static/assets/esri-logo-black.svg" />
+        <TopNavTitle href={getLink(0)}>JavaScript @ Esri</TopNavTitle>
         <TopNavList>
-          <TopNavLink href="#" active={isActive([0, 40])}>
-            JSAPI + Arcade
+          <TopNavLink href={getLink(0)} active={isActive([0, 26])}>Intro</TopNavLink>
+          <TopNavLink href={getLink(27)} active={isActive([27, 59])}>
+            JSAPI
           </TopNavLink>
-          <TopNavLink href="#" active={isActive([41, 53])}>Web AppBuilder + ExB</TopNavLink>
-          <TopNavLink href="#" active={isActive([54, 57])}>Open Source</TopNavLink>
+          <TopNavLink href={getLink(60)} active={isActive([60, 79])}>Web AppBuilder + ExB</TopNavLink>
+          <TopNavLink href={getLink(80)} active={isActive([80, 1000])}>Open Source</TopNavLink>
         </TopNavList>
         <TopNavActionsList>
-          <TopNavLink href="#">Sign In</TopNavLink>
+          <TopNavLink href={getLink(0)}>Sign In</TopNavLink>
           <Button clear>Sign Up</Button>
         </TopNavActionsList>
       </TopNav>
@@ -31,6 +32,14 @@ const Provider = ({ children }) => {
     </CalciteThemeProvider>
   );
 };
+
+const getLink = slide => {
+  if (typeof window === 'undefined') {
+    return '#';
+  } else {
+    return `${window.location.origin}/${slide}`;
+  }
+}
 
 const isActive = range => {
   if (typeof window === 'undefined') {
