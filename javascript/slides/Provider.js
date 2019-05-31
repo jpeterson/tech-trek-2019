@@ -16,12 +16,12 @@ const Provider = ({ children }) => {
         <TopNavBrand href={getLink(0)} src="/static/assets/esri-logo-black.svg" />
         <TopNavTitle href={getLink(0)}>JavaScript @ Esri</TopNavTitle>
         <TopNavList>
-          <TopNavLink href={getLink(0)} active={isActive([0, 26])}>Intro</TopNavLink>
-          <TopNavLink href={getLink(27)} active={isActive([27, 59])}>
+          <TopNavLink href={getLink(0)} active={isActive([0, 14])}>Intro</TopNavLink>
+          <TopNavLink href={getLink(15)} active={isActive([15, 47])}>
             JSAPI
           </TopNavLink>
-          <TopNavLink href={getLink(60)} active={isActive([60, 79])}>Web AppBuilder + ExB</TopNavLink>
-          <TopNavLink href={getLink(80)} active={isActive([80, 1000])}>Open Source</TopNavLink>
+          <TopNavLink href={getLink(48)} active={isActive([48, 67])}>Web AppBuilder + ExB</TopNavLink>
+          <TopNavLink href={getLink(68)} active={isActive([68, 1000])}>Open Source</TopNavLink>
         </TopNavList>
         <TopNavActionsList>
           <TopNavLink href={getLink(0)}>Sign In</TopNavLink>

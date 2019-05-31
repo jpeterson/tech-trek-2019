@@ -19,20 +19,17 @@ const Provider = ({ children }) => {
         />
         <TopNavTitle href={getLink(0)}>Python @ Esri</TopNavTitle>
         <TopNavList>
-          <TopNavLink href={getLink(0)} active={isActive([0, 26])}>
+          <TopNavLink href={getLink(0)} active={isActive([0, 14])}>
             Intro
           </TopNavLink>
-          <TopNavLink href={getLink(27)} active={isActive([27, 39])}>
+          <TopNavLink href={getLink(15)} active={isActive([15, 27])}>
             Python Environments
           </TopNavLink>
-          <TopNavLink href={getLink(40)} active={isActive([40, 72])}>
+          <TopNavLink href={getLink(28)} active={isActive([28, 60])}>
             Administering your GIS
           </TopNavLink>
-          <TopNavLink href={getLink(73)} active={isActive([73, 88])}>
+          <TopNavLink href={getLink(61)} active={isActive([61, 1000])}>
             Analysis
-          </TopNavLink>
-          <TopNavLink href={getLink(89)} active={isActive([89, 1000])}>
-            Advanced Workflows
           </TopNavLink>
         </TopNavList>
         <TopNavActionsList>
